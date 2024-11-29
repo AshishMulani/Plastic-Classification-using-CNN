@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plastic Classification</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f8fa;
+            color: #333;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Header */
+        header {
+            background-color: #0066cc;
+            color: white;
+            padding: 15px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        header .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        header .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        header nav ul li {
+            margin: 0 15px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(to right, #0066cc, #0099ff);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .hero .cta-button {
+            display: inline-block;
+            background-color: #ff9900;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero .cta-button:hover {
+            background-color: #e68a00;
+        }
+
+        /* How It Works Section */
+        #how-it-works {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f0f8ff;
+        }
+
+        #how-it-works h3 {
+            color: #0066cc;
+        }
+
+        #how-it-works .steps {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        #how-it-works .step {
+            background-color: white;
+            border: 1px solid #dce6f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+        }
+
+        #how-it-works .step img {
+            width: 100px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+
+        #how-it-works .step p {
+            color: #333;
+            font-weight: bold;
+        }
+
+        /* Classify Plastic Section */
+        #upload {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #fff;
+        }
+
+       /* #upload h3 {
+            color: #0066cc;
+        }*/
+
+        /* Plastic Types Section */
+#types-of-plastic {
+            padding: 40px 20px;
+            text-align: center;
+            background-color: #f0f8ff;
+        }
+
+        #types-of-plastic .plastic-types {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #types-of-plastic .plastic-type {
+            background: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            text-align: left;
+        }
+
+        #types-of-plastic .plastic-type h4 {
+            font-size: 18px;
+            color: #0066cc;
+            margin-bottom: 10px;
+        }
+
+        #types-of-plastic .plastic-type p {
+            font-size: 14px;
+            color: #666;
+        }
+
+        #types-of-plastic h3 {
+            color: #0066cc;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://www.shutterstock.com/shutterstock/photos/1486207727/display_1500/stock-vector-letter-a-with-plastic-or-bottle-vector-logo-template-suitable-for-ecology-drink-fresh-water-1486207727.jpg" alt="Logo">
+            <h1>Plastic Classification</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#how-it-works">How It Works</a></li>
+                <li><a href="#upload">Classify Plastic</a></li>
+                <li><a href="#types-of-plastic">Plastic Types</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <h2>Identify and Classify Plastics with AI</h2>
+            <p>Upload an image of plastic waste, and our AI will determine the type for better recycling and disposal.</p>
+            <a href="#upload" class="cta-button">Get Started</a>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works">
+            <h3>How It Works</h3>
+            <div class="steps">
+                <div class="step">
+                    <img src="https://media.istockphoto.com/id/1296032714/photo/plastic-pollution.jpg?s=612x612&w=0&k=20&c=zMR1oY26QuxuS9mk2YlWSvKt8YzUn5z8rG4mLRqjtjE=" alt="Step 1">
+                    <p>Step 1: Upload a plastic image</p>
+                </div>
+                <div class="step">
+                    <img src="https://www.areyour.org/wp-content/uploads/2023/06/articolo-giugno.jpg" alt="Step 2">
+                    <p>Step 2: AI analyzes the plastic type</p>
+                </div>
+                <div class="step">
+                    <img src="https://sensing.konicaminolta.asia/wp-content/uploads/2023/12/Plastics-Classification-with-Hyperspectral-Imaging-Camera.webp" alt="Step 3">
+                    <p>Step 3: Get classification results</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload" style="background-color: #f4f9fc; padding: 40px 20px; ">
+            <h3 style="font-size: 32px;  color: #0066cc; margin-bottom: 20px;">Classify Plastic</h3>
+            <div style="max-width: 600px; margin: 0 auto; background-color: white; padding: 30px; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+            <form id="upload-form" enctype="multipart/form-data">
+                <label for="file-input" style="font-size: 18px; font-weight: bold; color: #333; display: block; margin-bottom: 10px;">Choose an image of the plastic:</label>
+               
+                  <button type="button" id="file-button" onclick="document.getElementById('file-input').click();" style="background-color: #0066cc; color: white; border: none; padding: 15px 30px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">
+                Choose File
+            </button>
+             <input type="file" id="file-input" name="file" accept="image/*" style="display: none;" onchange="displayFileName()">
+             <!-- Display Selected File Name -->
+            <p id="file-name" style="margin-top: 10px; color: #666;"></p>
+               
+            </form>
+             <div><button type="button" id="upload-button" style="background-color: #0066cc; color: white; border: none; padding: 15px 15px; border-radius: 5px; font-size: 16px; cursor: pointer; transition: background-color 0.3s;">Classify</button></div>
+            <div id="result">
+                <p>Results will appear here after classification.</p>
+            </div>
+        </div>
+        </section>
+
+
+         <!-- Types of Plastic Section -->
+        <section id="types-of-plastic">
+            <h3>7 Types of Plastic</h3>
+            <div class="plastic-types">
+                <div class="plastic-type">
+                    <h4>1. PET (Polyethylene Terephthalate)</h4>
+                    <p>Commonly used in beverage bottles and food containers. Recyclable and safe for single use.</p>
+                </div>
+                <div class="plastic-type">
+                    <h4>2. HDPE (High-Density Polyethylene)</h4>
+                    <p>Found in milk jugs and detergent bottles. Durable and widely recyclable.</p>
+                </div>
+                <div class="plastic-type">
+                    <h4>3. PVC (Polyvinyl Chloride)</h4>
+                    <p>Used in pipes and medical equipment. Difficult to recycle due to chemical additives.</p>
+                </div>
+                <div class="plastic-type">
+                    <h4>4. LDPE (Low-Density Polyethylene)</h4>
+                    <p>Common in plastic bags and wraps. Flexible but less recyclable.</p>
+                </div>
+                <div class="plastic-type">
+                    <h4>5. PP (Polypropylene)</h4>
+                    <p>Used in food containers, bottle caps, and straws. Heat resistant and partially recyclable.</p>
+                </div>
+                <div class="plastic-type">
+                    <h4>6. PS (Polystyrene)</h4>
+                    <p>Found in disposable cups and packaging. Lightweight but not easily recyclable.</p>
+                </div>
+                <div class="plastic-type">
+                    <h4>7. Other (Miscellaneous Plastics)</h4>
+                    <p>Includes polycarbonate and bioplastics. Often non-recyclable and used in specialized products.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Plastic Classification. All rights reserved.</p>
+    </footer>
+      <script>
+
+          // Function to display the selected file name
+    function displayFileName() {
+        const fileInput = document.getElementById('file-input');
+        const fileName = fileInput.files[0] ? fileInput.files[0].name : 'No file selected';
+        document.getElementById('file-name').innerText = fileName;
+    }
+        // Mock classification data
+        const plasticTypes = [
+            "PET (Polyethylene Terephthalate)",
+            "HDPE (High-Density Polyethylene)",
+            "PVC (Polyvinyl Chloride)",
+            "LDPE (Low-Density Polyethylene)",
+            "PP (Polypropylene)",
+            "PS (Polystyrene)",
+            "Other (Miscellaneous Plastics)"
+        ];
+
+        // Get DOM elements
+        const fileInput = document.getElementById('file-input');
+        const uploadButton = document.getElementById('upload-button');
+        const resultDiv = document.getElementById('result');
+
+        // Add event listener for the classify button
+        uploadButton.addEventListener('click', () => {
+            if (fileInput.files.length === 0) {
+                resultDiv.innerHTML = "<p>Please select a file first.</p>";
+                return;
+            }
+
+            // Simulate AI classification by randomly selecting a plastic type
+            const randomType = plasticTypes[Math.floor(Math.random() * plasticTypes.length)];
+            
+            // Display the classification result
+            resultDiv.innerHTML = `<p>Classified as: <span>${randomType}</span></p>`;
+        });
+    </script>
+
+</body>
+</html>
