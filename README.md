@@ -63,6 +63,7 @@ To train the model:
 ### Clone the repository:
 #### bash
 git clone https://github.com/AshishMulani/Plastic-Classification-using-CNN
+
 cd Plastic_Classification_using_CNN
 Prepare your dataset in the specified format.
 Run the training script:
